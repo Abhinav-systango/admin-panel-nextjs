@@ -7,7 +7,6 @@ import { NavLinks } from "@/utils/NavLinksData";
 
 const NavbarMobileSheet = () => {
   const [open, setOpen] = useState(false);
-  console.log("🚀 ~ NavbarMobileSheet ~ open:", open)
   return (
     <>
       <div className="block md:hidden">

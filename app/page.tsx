@@ -1,4 +1,3 @@
-import Slider from "@/components/slider/Slider";
 import React from "react";
 
 const data = [
@@ -13,25 +12,7 @@ const data = [
 function Root() {
   return (
     <div>
-      <Slider
-        data={data}
-        items={1}
-        margin={10}
-        breakpoints={{
-          0: { items: 1 },
-          600: { items: 2 },
-          900: { items: 4 },
-        }}
-        // renderer={
-        //   <>
-        //     {data.map((item) => (
-        //       <div>
-        //         <img src={item.img} alt="" className="p-10 bg-red-400" />
-        //       </div>
-        //     ))}
-        //   </>
-        // }
-      />
+      
     </div>
   );
 }
