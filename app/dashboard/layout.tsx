@@ -7,7 +7,7 @@ const layout = ({children}: {children: Readonly<React.ReactNode>}) => {
     <div className='dark:bg-gray-950 dark:text-white h-screen w-full'>
       <div className='flex h-full gap-4'>
         <Sidebar /> 
-        <div className='w-full h-full px-5'>
+        <div className='w-full h-full px-5 overflow-auto'>
             <div className=''>
               <Navbar />
             </div>

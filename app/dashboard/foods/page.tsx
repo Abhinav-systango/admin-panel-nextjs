@@ -1,8 +1,11 @@
+import FoodDatatable from '@/components/food/FoodDatatable'
 import React from 'react'
 
-const Foods = () => {
+const Foods = async () => {
   return (
-    <div>Foods</div>
+    <div>
+      <FoodDatatable />
+    </div>
   )
 }
 

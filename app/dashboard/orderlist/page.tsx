@@ -1,9 +1,19 @@
-import React from 'react'
+import dynamic from "next/dynamic";
+import Skeleton from "@/components/skeleton/Skeleton";
+import { DummyOrderListData } from "@/utils/data";
+const DataTable = dynamic(() => import("@/components/datatable/DataTable"), {
+  ssr: false,
+  loading: () => <Skeleton />,
+});
 
 const OrderList = () => {
-  return (
-    <div>OrderList</div>
-  )
-}
+  const columns = ["picture", "username", "email", "order_status", "total"];
 
-export default OrderList
+  return (
+    <div>
+      <DataTable data={DummyOrderListData} count={10} columns={columns} />
+    </div>
+  );
+};
+
+export default OrderList;

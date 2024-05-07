@@ -22,11 +22,6 @@ export const NavLinks:NavLinksI[] = [
         icon: <FaRegUser />
     },
     {
-        name: "Restro",
-        link: "/dashboard/restro",
-        icon: <FaBuilding />
-    },
-    {
         name: "Foods",
         link: "/dashboard/foods",
         icon: <FaMortarPestle />

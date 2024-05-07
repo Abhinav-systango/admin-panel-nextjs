@@ -8,7 +8,7 @@ const OrdersDataCarts = () => {
       {ordersCardData.map((item) => {
         return (
           <div className="col-span-12 md:col-span-6 xl:col-span-3  rounded-lg bg-gray-900 shadow-md p-5 w-full">
-            <div className="flex gap-4 md:gap-10 md:justify-center">
+            <div className="flex gap-4 md:gap-6 md:justify-center">
               <img src={item.image} alt="" className="h-16" />
               <div>
                 <p className="text-3xl font-bold">{item.count}</p>
