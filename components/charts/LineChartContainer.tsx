@@ -46,6 +46,7 @@ const LineChartContainer = () => {
                 width: chartWidth,
                 height: chartHeight,
                 margin: {t:30, l:30, r:30, b:30},
+                plot_bgcolor: 'rgba(31, 41, 55, 1)',
                 paper_bgcolor: 'rgb(31 41 55 / 1))',
 
             }}

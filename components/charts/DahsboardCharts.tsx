@@ -12,6 +12,12 @@ const LineChartContainer = dynamic(() => import("./LineChartContainer"), {
   loading: () => <Skeleton />,
 });
 
+const BoxChartContainer = dynamic(() => import("./BoxChartContainer"), {
+  ssr: false,
+  loading: () => <Skeleton />,
+});
+
+
 const DonutChartData: Data[] = [
   {
     type: "pie",
@@ -59,6 +65,9 @@ const DahsboardCharts = () => {
       </div>
       <div className="col-span-12 md:col-span-6">
         <LineChartContainer />
+      </div>
+      <div className="col-span-12 ">
+        <BoxChartContainer />
       </div>
     </div>
   );

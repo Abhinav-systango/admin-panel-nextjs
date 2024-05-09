@@ -12,7 +12,6 @@ const data = [
 function Root() {
   return (
     <div>
-      
     </div>
   );
 }

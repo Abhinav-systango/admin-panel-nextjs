@@ -7,7 +7,7 @@ const OrdersDataCarts = () => {
     <div className="grid grid-cols-12 justify-center gap-4 w-full">
       {ordersCardData.map((item) => {
         return (
-          <div className="col-span-12 md:col-span-6 xl:col-span-3  rounded-lg bg-gray-900 shadow-md p-5 w-full">
+          <div className="col-span-12 md:col-span-6 xl:col-span-3  rounded-lg bg-gray-900 shadow-md p-5 w-full" key={Math.random()}>
             <div className="flex gap-4 md:gap-6 md:justify-center">
               <img src={item.image} alt="" className="h-16" />
               <div>

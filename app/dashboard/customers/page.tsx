@@ -41,7 +41,7 @@ const Customers = () => {
       </div>
       <div className="flex flex-wrap gap-6 justify-center">
         {userData?.map((user) => {
-          return <UserCard userData={user} />;
+          return <UserCard userData={user} key={Math.random()}/>;
         })}
       </div>
     </section>

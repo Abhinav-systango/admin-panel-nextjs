@@ -32,7 +32,7 @@ const DataTable = ({
             <tr>
               {columns.map((item) => {
                 return (
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="px-6 py-3" key={Math.random()}>
                     {item}
                   </th>
                 );
@@ -44,9 +44,9 @@ const DataTable = ({
               .slice(count * page - count, count * page)
               .map((item, index) => {
                 return (
-                  <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 overflow-auto">
+                  <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 overflow-auto" key={Math.random()}>
                     {columns.map((col, colIndex) => (
-                      <td key={colIndex} className="px-6 py-4">
+                      <td key={Math.random()} className="px-6 py-4">
                         {col !== "Action" ? (
                           <span
                             style={{
